@@ -40,7 +40,15 @@ Any nontrivial change requires a change note:
 ### New Queries
 Experimental queries go in `<language>/ql/src/experimental/`:
 1. Must have proper query metadata (`@id`, `@name`, `@description`, `@kind`, `@problem.severity`)
-2. Query IDs must start with the language-specific prefix
+2. Query IDs must start with the language-specific prefix:
+   - C/C++: `cpp/`
+   - C#: `cs/`
+   - Go: `go/`
+   - Java/Kotlin: `java/`
+   - JavaScript/TypeScript: `js/`
+   - Python: `py/`
+   - Ruby: `rb/`
+   - Swift: `swift/`
 3. Include unit tests in `<language>/ql/test/experimental/`
 
 ### Files to Ignore
